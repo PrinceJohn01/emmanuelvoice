@@ -1,0 +1,501 @@
+name: myapp
+description: A exported flutter project from FUNCTION12
+
+
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number is used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+# In Windows, build-name is used as the major, minor, and patch parts
+# of the product and file versions while build-number is used as the build suffix.
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.18.2 <3.0.0'
+
+# Dependencies specify other packages that your package needs in order to work.
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version numbers below to
+# the latest version available on pub.dev. To see which dependencies have newer
+# versions available, run `flutter pub outdated`.
+dependencies:
+  flutter:
+    sdk: flutter
+
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.2
+  google_fonts: ^5.1.0
+  get: ^4.6.6
+  auto_size_text: ^3.0.0
+  cached_network_image: ^3.3.0
+  equatable: ^2.0.5
+  flutter_bloc: ^8.1.2
+  flutter_svg: ^2.0.2
+  font_awesome_flutter: ^10.4.0
+  shimmer: ^2.0.0
+  universal_html: ^2.0.9
+  clipboard: ^0.1.3
+  stacked: ^3.4.1+1
+  http: ^1.1.0
+  sqflite: ^2.3.0
+  video_player: ^2.8.1
+  intl: ^0.18.1
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # The "flutter_lints" package below contains a set of recommended lints to
+  # encourage good coding practices. The lint set provided by the package is
+  # activated in the `analysis_options.yaml` file located at the root of your
+  # package. See that file for information about deactivating specific lint
+  # rules and activating additional ones.
+  flutter_lints: ^2.0.0
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  # assets:
+  #   - images/a_dot_burr.jpeg
+  #   - images/a_dot_ham.jpeg
+  assets:
+    - assets/testimonies/images/group-46.png
+    - assets/health-tips/images/vector.png
+    - assets/upcoming-events/images/vector-89x.png
+    - assets/hymn/images/group-46-z4A.png
+    - assets/hymn/images/vector-sS2.png
+    - assets/hymn/images/vector-wvz.png
+    - assets/health-tips/images/vector-YtS.png
+    - assets/home/images/vector-yQe.png
+    - assets/upcoming-events/images/icon-rounded-facebook.png
+    - assets/pastors-desk/images/icon-rounded-facebook-Bog.png
+    - assets/health-tips/images/vector-Nw4.png
+    - assets/upcoming-events/images/vector-vi6.png
+    - assets/health-tips/images/group-46-mX8.png
+    - assets/pastors-desk/images/group-46-CT4.png
+    - assets/upcoming-events/images/group-46-fRk.png
+    - assets/home/images/vector-cre.png
+    - assets/home/images/icon-rounded-facebook-ENE.png
+    - assets/home/images/icon-rounded-facebook-b2r.png
+    - assets/about-us/images/icon-rounded-facebook-JrN.png
+    - assets/testimonies/images/vector-TjG.png
+    - assets/upcoming-events/images/download-1-1.png
+    - assets/home/images/download-1-1-x7L.png
+    - assets/upcoming-events/images/vector-9VC.png
+    - assets/about-us/images/vector-x7C.png
+    - assets/health-tips/images/icon-rounded-facebook-exz.png
+    - assets/testimonies/images/icon-rounded-facebook-7u4.png
+    - assets/home/images/vector-7aA.png
+    - assets/home/images/vector-dWA.png
+    - assets/about-us/images/vector-REz.png
+    - assets/home/images/group-46-7qC.png
+    - assets/home/images/vector-MPQ.png
+    - assets/hymn/images/icon-rounded-facebook-TRU.png
+    - assets/pastors-desk/images/vector-fBx.png
+    - assets/about-us/images/group-46-iGa.png
+    - assets/about-us/images/download-1-1-hu4.png
+    - assets/home/images/group-44.png
+    - assets/about-us/images/vector-8hG.png
+    - assets/hymn/images/vector-Y66.png
+    - assets/testimonies/images/download-1-1-pkJ.png
+    - assets/hymn/images/download-1-1-cQa.png
+    - assets/pastors-desk/images/vector-ybg.png
+    - assets/health-tips/images/download-1-1-eGS.png
+    - assets/pastors-desk/images/download-1-1-Lta.png
+    - assets/upcoming-events/images/vector-Qqg.png
+    - assets/hymn/images/vector-2mg.png
+    - assets/home/images/vector-Rsp.png
+    - assets/pastors-desk/images/vector-qSi.png
+    - assets/health-tips/images/vector-pHx.png
+    - assets/home/images/vector-oDk.png
+    - assets/home/images/group-45.png
+    - assets/about-us/images/download-3.png
+    - assets/home/images/download-3-7vr.png
+    - assets/health-tips/images/download-3-AjL.png
+    - assets/upcoming-events/images/download-3-cLS.png
+    - assets/hymn/images/download-3-hmC.png
+    - assets/pastors-desk/images/download-3-X4e.png
+    - assets/testimonies/images/download-3-9uC.png
+    - assets/home/images/idkgvogg6-1.png
+    - assets/testimonies/images/vector-iqY.png
+    - assets/home/images/x630wa-1.png
+    - assets/testimonies/images/vector-9LN.png
+    - assets/pastors-desk/images/vector-mte.png
+    - assets/testimonies/images/vector-CJN.png
+    - assets/testimonies/images/rectangle-529.png
+    - assets/pastors-desk/images/rectangle-529-8h8.png
+    - assets/upcoming-events/images/rectangle-529-Q6E.png
+    - assets/home/images/rectangle-518.png
+    - assets/health-tips/images/rectangle-518-UVQ.png
+    - assets/home/images/rectangle-518-vAN.png
+    - assets/upcoming-events/images/rectangle-518-cxJ.png
+    - assets/hymn/images/rectangle-518-tQ2.png
+    - assets/testimonies/images/rectangle-518-kae.png
+    - assets/about-us/images/rectangle-518-UFk.png
+    - assets/health-tips/images/rectangle-529-Puk.png
+    - assets/about-us/images/rectangle-529-7Ar.png
+    - assets/pastors-desk/images/rectangle-518-FH4.png
+    - assets/hymn/images/rectangle-529-9tE.png
+    - assets/home/images/bi-youtube.png
+    - assets/hymn/images/kelly-sikkema-x5x0gu2kfzc-unsplash-1.png
+    - assets/upcoming-events/images/img-20230516-wa0003.png
+    - assets/about-us/images/vector-yuC.png
+    - assets/home/images/pno-2.png
+    - assets/home/images/screenshot20230516-182702facebook-2.png
+    - assets/about-us/images/screenshot20230516-182702facebook-1.png
+    - assets/home/images/google-maps-2961754-1.png
+    - assets/about-us/images/google-maps-2961754-1-2dQ.png
+    - assets/home/images/screenshot20230516-182702facebook-1-RGn.png
+    - assets/upcoming-events/images/img-20230516-wa0002.png
+    - assets/home/images/img-20230516-wa0002-EyG.png
+    - assets/testimonies/images/google-maps-2961754-1-yii.png
+    - assets/pastors-desk/images/pno-2-uDL.png
+    - assets/hymn/images/google-maps-2961754-1-CzN.png
+    - assets/pastors-desk/images/google-maps-2961754-1-iUz.png
+    - assets/upcoming-events/images/google-maps-2961754-1-6TC.png
+    - assets/health-tips/images/google-maps-2961754-1-dwg.png
+    - assets/pastors-desk/images/pexels-tirachard-kumtanom-733852-1.png
+    - assets/health-tips/images/jannis-brandt-8manzosdsgm-unsplash.png
+    - assets/deshym/images/download-3.png
+    - assets/deshome/images/download-3-SKU.png
+    - assets/deshome/images/rectangle-518.png
+    - assets/desabout/images/rectangle-518-7qU.png
+    - assets/desabout/images/download-3-rZQ.png
+    - assets/deshym/images/rectangle-518-1dt.png
+    - assets/deshealth/images/download-3-Btv.png
+    - assets/deshym/images/rectangle-529.png
+    - assets/deshealth/images/rectangle-518-RHk.png
+    - assets/deshealth/images/rectangle-529-2hx.png
+    - assets/despastor/images/rectangle-529-jJA.png
+    - assets/destestim/images/download-1-1.png
+    - assets/despastor/images/download-1-1-h2S.png
+    - assets/destestim/images/rectangle-529-W8r.png
+    - assets/deshome/images/download-1-1-o7x.png
+    - assets/desabout/images/download-1-1-VDL.png
+    - assets/destestim/images/rectangle-518-pjL.png
+    - assets/destestim/images/download-3-wsY.png
+    - assets/deshealth/images/download-1-1-XPQ.png
+    - assets/desabout/images/rectangle-529-ata.png
+    - assets/deshym/images/download-1-1-Sh8.png
+    - assets/despastor/images/rectangle-518-Kpe.png
+    - assets/deshome/images/rectangle-518-HoG.png
+    - assets/despastor/images/download-3-LJv.png
+    - assets/mobilweb/images/download-1-2.png
+    - assets/desabout/images/vector.png
+    - assets/deshym/images/vector-4gr.png
+    - assets/mobilweb/images/rectangle-534.png
+    - assets/deshome/images/vector-gWE.png
+    - assets/desevent/images/download-1-1-Ks8.png
+    - assets/mobilweb/images/download-3-KGn.png
+    - assets/mobilweb/images/rectangle-535.png
+    - assets/destestim/images/icon-rounded-facebook.png
+    - assets/despastor/images/vector-QtA.png
+    - assets/desevent/images/download-3-21g.png
+    - assets/deshome/images/pno-2.png
+    - assets/deshome/images/icon-rounded-facebook-xhQ.png
+    - assets/deshealth/images/group-46.png
+    - assets/deshealth/images/icon-rounded-facebook-1ES.png
+    - assets/deshym/images/group-46-Go4.png
+    - assets/desabout/images/icon-rounded-facebook-xnE.png
+    - assets/despastor/images/vector-uoG.png
+    - assets/deshome/images/vector-Pte.png
+    - assets/desevent/images/google-maps-2961754-1.png
+    - assets/desevent/images/img-20230516-wa0002.png
+    - assets/deshealth/images/vector-G1x.png
+    - assets/deshealth/images/vector-1VL.png
+    - assets/destestim/images/vector-u6r.png
+    - assets/deshome/images/x630wa-1.png
+    - assets/deshome/images/vector-Mjx.png
+    - assets/desevent/images/icon-rounded-facebook-ncr.png
+    - assets/deshealth/images/vector-hx6.png
+    - assets/deshome/images/screenshot20230516-182702facebook-2.png
+    - assets/desabout/images/screenshot20230516-182702facebook-1.png
+    - assets/mobilweb/images/img-20230516-wa0003.png
+    - assets/deshealth/images/vector-sEa.png
+    - assets/mobilwebpastordes/images/download-1-2-Jg2.png
+    - assets/mobilwebpastordes/images/rectangle-534-aJe.png
+    - assets/destestim/images/group-46-uut.png
+    - assets/deshym/images/vector-pX4.png
+    - assets/deshome/images/vector-nCz.png
+    - assets/deshome/images/screenshot20230516-182702facebook-1-5kN.png
+    - assets/mobilweb/images/battery.png
+    - assets/deshym/images/vector-X94.png
+    - assets/desabout/images/vector-qQe.png
+    - assets/deshome/images/vector-mp6.png
+    - assets/mobilwebpastordes/images/download-3-gw4.png
+    - assets/desabout/images/vector-ok6.png
+    - assets/deshome/images/idkgvogg6-1.png
+    - assets/desevent/images/vector-bLN.png
+    - assets/mobilweb/images/img-20230516-wa0002-HLv.png
+    - assets/deshome/images/vector-La6.png
+    - assets/deshym/images/vector-NFk.png
+    - assets/deshome/images/group-45.png
+    - assets/despastor/images/icon-rounded-facebook-P5c.png
+    - assets/mobilwebpastordes/images/rectangle-535-NJE.png
+    - assets/deshome/images/group-44.png
+    - assets/desabout/images/group-46-j8N.png
+    - assets/desevent/images/rectangle-518-a1p.png
+    - assets/desevent/images/rectangle-529-biA.png
+    - assets/desevent/images/vector-GHY.png
+    - assets/destestim/images/vector-EB4.png
+    - assets/despastor/images/group-46-RiA.png
+    - assets/mobilwebpastordes/images/wi-fi.png
+    - assets/mobilweb/images/icon-rounded-facebook-xfC.png
+    - assets/mobilweb/images/vector-fPg.png
+    - assets/deshome/images/vector-V38.png
+    - assets/desabout/images/vector-3Xg.png
+    - assets/deshome/images/img-20230516-wa0002-jxW.png
+    - assets/desabout/images/google-maps-2961754-1-2CA.png
+    - assets/desevent/images/vector-xk2.png
+    - assets/deshome/images/group-46-iUz.png
+    - assets/mobilwebpastordes/images/pno-2-YsU.png
+    - assets/despastor/images/vector-FYv.png
+    - assets/mobilwebpastordes/images/vector-tbk.png
+    - assets/desevent/images/img-20230516-wa0003-SNv.png
+    - assets/deshym/images/icon-rounded-facebook-r8A.png
+    - assets/despastor/images/vector-jnA.png
+    - assets/mobilwebpastordes/images/icon-menu.png
+    - assets/deshome/images/icon-rounded-facebook-DGW.png
+    - assets/mobilwebpastordes/images/google-maps-2961754-2.png
+    - assets/despastor/images/pno-2-MSS.png
+    - assets/mobilweb/images/group-47.png
+    - assets/mobilweb/images/icon-menu-jZk.png
+    - assets/desevent/images/group-46-3Le.png
+    - assets/mobilwebpastordes/images/vector-tAe.png
+    - assets/desevent/images/vector-Bce.png
+    - assets/mobilweb/images/vector-bLE.png
+    - assets/destestim/images/vector-8Bc.png
+    - assets/mobilewebtesti/images/download-3-KSS.png
+    - assets/mobilewebtesti/images/wi-fi-3N2.png
+    - assets/mobilewebtesti/images/combined-shape.png
+    - assets/mobilwebpastordes/images/vector-LnN.png
+    - assets/mobilewebtesti/images/google-maps-2961754-2-96a.png
+    - assets/mobilewebtesti/images/vector-XML.png
+    - assets/mobilweb/images/vector-gV8.png
+    - assets/mobilewebtesti/images/vector-f86.png
+    - assets/mobilweb/images/google-maps-2961754-2-KH4.png
+    - assets/deshome/images/bi-youtube.png
+    - assets/mobilwebpastordes/images/battery-XBQ.png
+    - assets/mobilweb/images/combined-shape-GPt.png
+    - assets/mobilewebtesti/images/icon-rounded-facebook-SRg.png
+    - assets/mobilwebpastordes/images/combined-shape-LGA.png
+    - assets/mobilewebtesti/images/vector-DWr.png
+    - assets/mobilewebtesti/images/icon-menu-EqG.png
+    - assets/mobilweb/images/wi-fi-818.png
+    - assets/deshome/images/google-maps-2961754-1-PHL.png
+    - assets/destestim/images/vector-gkr.png
+    - assets/mobilewebtesti/images/battery-dRC.png
+    - assets/mobilewebtesti/images/group-47-BRL.png
+    - assets/mobilweb/images/vector-5mc.png
+    - assets/mobilwebpastordes/images/vector-Fw8.png
+    - assets/despastor/images/google-maps-2961754-1-8ug.png
+    - assets/deshym/images/google-maps-2961754-1-qp6.png
+    - assets/mobilwebpastordes/images/group-47-tkJ.png
+    - assets/mobilewebtesti/images/vector-xEN.png
+    - assets/mobilwebpastordes/images/icon-rounded-facebook-TVC.png
+    - assets/deshealth/images/google-maps-2961754-1-SsL.png
+    - assets/destestim/images/google-maps-2961754-1-DPg.png
+    - assets/mobilwebpastordes/images/pexels-tirachard-kumtanom-733852-1.png
+    - assets/deshym/images/kelly-sikkema-x5x0gu2kfzc-unsplash-1.png
+    - assets/despastor/images/pexels-tirachard-kumtanom-733852-1-kQi.png
+    - assets/mobilewebtesti/images/rectangle-534-bHt.png
+    - assets/mobilewebtesti/images/rectangle-535-biA.png
+    - assets/mobilewebtesti/images/download-1-2-C9G.png
+    - assets/mobilwebhealth/images/wi-fi-nbk.png
+    - assets/mobilwebhealth/images/download-3-NJ6.png
+    - assets/mobilwebhealth/images/download-1-2-PXY.png
+    - assets/mobilwebhealth/images/vector-Q6n.png
+    - assets/mobilwebhealth/images/vector-tTc.png
+    - assets/mobilwebhealth/images/rectangle-534-MyL.png
+    - assets/mobilewebhym/images/download-1-2-gCA.png
+    - assets/mobilwebhealth/images/icon-rounded-facebook-Ti2.png
+    - assets/mobilewebhym/images/rectangle-534-YaN.png
+    - assets/mobilwebhealth/images/combined-shape-BgN.png
+    - assets/mobilwebhealth/images/rectangle-535-VTp.png
+    - assets/mobilwebhealth/images/battery-7yc.png
+    - assets/deshealth/images/jannis-brandt-8manzosdsgm-unsplash.png
+    - assets/mobilwebhealth/images/vector-NLJ.png
+    - assets/mobilwebhealth/images/google-maps-2961754-2-hbx.png
+    - assets/mobilwebhealth/images/vector-vLA.png
+    - assets/mobilewebhym/images/download-3-2pr.png
+    - assets/mobilewebhym/images/battery-M8W.png
+    - assets/mobilewebhym/images/google-maps-2961754-2-wKG.png
+    - assets/mobilwebhealth/images/group-47-c8S.png
+    - assets/about/images/combined-shape-GMp.png
+    - assets/about/images/screenshot20230516-182702facebook-1-5nS.png
+    - assets/mobilewebhym/images/rectangle-535-N6e.png
+    - assets/mobilewebhym/images/wi-fi-jGE.png
+    - assets/mobilwebhealth/images/icon-menu-322.png
+    - assets/mobilewebhym/images/vector-r9p.png
+    - assets/mobilewebhym/images/vector-WSv.png
+    - assets/about/images/wi-fi-C4J.png
+    - assets/mobilewebhym/images/kelly-sikkema-x5x0gu2kfzc-unsplash-1-SSW.png
+    - assets/mobilewebhym/images/vector-KkN.png
+    - assets/about/images/download-1-2-TE2.png
+    - assets/mobilewebhym/images/combined-shape-6en.png
+    - assets/about/images/rectangle-535-uge.png
+    - assets/about/images/group-47-q4W.png
+    - assets/about/images/icon-menu-pn6.png
+    - assets/about/images/vector-ECa.png
+    - assets/mobilewebhym/images/icon-menu-KRL.png
+    - assets/about/images/battery-LjC.png
+    - assets/mobilewebhym/images/vector-9bG.png
+    - assets/about/images/vector-xzW.png
+    - assets/about/images/rectangle-534-U4A.png
+    - assets/about/images/vector-36J.png
+    - assets/mobilewebhym/images/group-47-wtW.png
+    - assets/mobilwebhealth/images/jannis-brandt-8manzosdsgm-unsplash-Q3C.png
+    - assets/about/images/vector-ZUe.png
+    - assets/about/images/download-3-MJi.png
+    - assets/mobilewebhym/images/icon-rounded-facebook-fir.png
+    - assets/mobilwebhome/images/vector-Y8r.png
+    - assets/mobilwebhome/images/combined-shape-ZRL.png
+    - assets/about/images/icon-rounded-facebook-cjC.png
+    - assets/about/images/google-maps-2961754-2-DS2.png
+    - assets/mobilwebhome/images/auto-group-daek.png
+    - assets/mobilwebhome/images/vector-xrE.png
+    - assets/mobilwebhome/images/icon-menu-pYr.png
+    - assets/mobilwebhome/images/bi-youtube-mvz.png
+    - assets/mobilwebhome/images/screenshot20230516-182702facebook-2-Gan.png
+    - assets/mobilwebhome/images/img-20230516-wa0003-NGr.png
+    - assets/mobilwebhome/images/vector-u8v.png
+    - assets/mobilwebhome/images/icon-rounded-facebook-sUe.png
+    - assets/mobilwebhome/images/icon-rounded-facebook-Lt2.png
+    - assets/mobilwebhome/images/vector-gBC.png
+    - assets/mobilwebhome/images/wi-fi-w7G.png
+    - assets/mobilwebhome/images/vector-KVC.png
+    - assets/mobilwebhome/images/group-47-fcE.png
+    - assets/mobilwebhome/images/group-48.png
+    - assets/mobilwebhome/images/battery-Xop.png
+    - assets/mobilwebhome/images/vector-Qk2.png
+    - assets/mobilwebhome/images/x630wa-1-NTc.png
+    - assets/mobilwebhome/images/download-1-2-AEv.png
+    - assets/mobilwebhome/images/screenshot20230516-182702facebook-1-3jG.png
+    - assets/mobilwebhome/images/img-20230516-wa0002-uwQ.png
+    - assets/mobilwebhome/images/group-49.png
+    - assets/mobilwebhome/images/download-3-ize.png
+    - assets/mobilwebhome/images/idkgvogg6-1-u7Y.png
+    - assets/mobilwebhome/images/pno-2-6xJ.png
+    - assets/mobilwebhome/images/rectangle-535-Y7t.png
+    - assets/mobilwebhome/images/google-maps-2961754-2-HXp.png
+    - assets/mobilwebhome/images/rectangle-534-5vA.png
+    - assets/notification/images/vector-1uk.png
+    - assets/notification/images/vector-3Yv.png
+    - assets/notification/images/vector-M5c.png
+    - assets/notification/images/icon-rounded-facebook-P8n.png
+    - assets/notification/images/vector-oiJ.png
+    - assets/notification/images/group-47-Lcr.png
+    - assets/notification/images/battery-3mC.png
+    - assets/notification/images/vector-xEE.png
+    - assets/notification/images/wi-fi-BZC.png
+    - assets/notification/images/group-48-i18.png
+    - assets/notification/images/icon-menu-sEa.png
+    - assets/notification/images/vector-auY.png
+    - assets/notification/images/bi-youtube-Ehp.png
+    - assets/notification/images/auto-group-zcph.png
+    - assets/notification/images/icon-rounded-facebook-gyG.png
+    - assets/notification/images/combined-shape-5sg.png
+    - assets/notification/images/x630wa-1-ER8.png
+    - assets/notification/images/group-49-wH4.png
+    - assets/notification/images/pno-2-WNe.png
+    - assets/notification/images/download-1-2-pYJ.png
+    - assets/notification/images/rectangle-534-d38.png
+    - assets/notification/images/idkgvogg6-1-cQa.png
+    - assets/notification/images/download-3-PAr.png
+    - assets/notification/images/rectangle-535-KqL.png
+    - assets/upcoming-event/images/img-20230516-wa0002-8vW.png
+    - assets/upcoming-event/images/img-20230516-wa0003-8cz.png
+    - assets/notification/images/img-20230516-wa0003-sy4.png
+    - assets/notification/images/screenshot20230516-182702facebook-2-eF4.png
+    - assets/notification/images/screenshot20230516-182702facebook-1-8o4.png
+    - assets/notification/images/img-20230516-wa0002-uog.png
+    - assets/notification/images/google-maps-2961754-2-Nxa.png
+    - assets/upcoming-event/images/battery-o78.png
+    - assets/upcoming-event/images/wi-fi-BPG.png
+    - assets/upcoming-event/images/combined-shape-QuY.png
+    - assets/testimony/images/battery-YUr.png
+    - assets/testimony/images/combined-shape-32J.png
+    - assets/testimony/images/wi-fi-YaE.png
+    - assets/pastor-desk/images/pno-2-p3C.png
+    - assets/pastor-desk/images/wi-fi-ykE.png
+    - assets/pastor-desk/images/battery-6kA.png
+    - assets/hymn/images/wi-fi-kB4.png
+    - assets/editpastor-desk/images/battery-nok.png
+    - assets/pastor-desk/images/pexels-tirachard-kumtanom-733852-1-9HU.png
+    - assets/pastor-desk/images/combined-shape-nTc.png
+    - assets/editpastor-desk/images/wi-fi-XBg.png
+    - assets/edit-testimoney/images/combined-shape-2pa.png
+    - assets/edit-testimoney/images/wi-fi-XTY.png
+    - assets/upload-upcomingevent/images/wi-fi-e9Q.png
+    - assets/edit-testimoney/images/battery-eRx.png
+    - assets/upload-upcomingevent/images/img-20230516-wa0002-WWn.png
+    - assets/editpastor-desk/images/combined-shape-oYE.png
+    - assets/editpastor-desk/images/pexels-tirachard-kumtanom-733852-1-PUn.png
+    - assets/upload-upcomingevent/images/battery-9Gv.png
+    - assets/hymn/images/battery-xD8.png
+    - assets/editpastor-desk/images/pno-2-est.png
+    - assets/hymn/images/group-19.png
+    - assets/upload-upcomingevent/images/group-15.png
+    - assets/hymn/images/kelly-sikkema-x5x0gu2kfzc-unsplash-1-o4e.png
+    - assets/upload-upcomingevent/images/combined-shape-uuk.png
+    - assets/hymn/images/combined-shape-bZL.png
+
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Regular.ttf
+        - asset: assets/fonts/Poppins-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Poppins-Bold.ttf
+          weight: 700
+
+
+
+    # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
